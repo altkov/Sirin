@@ -1,0 +1,120 @@
+/* Main */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 24px;
+}
+
+body {
+    color: #605D52;
+    background-color: #F8F7EC;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1215px;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+/* Header Top */
+
+.header-top {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    color: #413E33;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top-item {
+    display: inline;
+    margin-right: 24px;
+}
+
+.header-top-lang li {
+    display: inline;
+    margin-left: 18px;
+}
+
+.header-top-center {
+    color: #887559;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 32px;
+}
+
+.header-top-center .header-top-icon img, .header-top-center .header-top-icon span {
+    vertical-align: middle;
+    font-weight: 600;
+    margin-right: 17px;
+}
+
+.header-top-telegram {
+    margin-left: 5px;
+}
+
+.header-top-lang {
+    text-transform: uppercase;
+    margin-right: 9px;
+}
+
+.header-top-lang {
+    display: inline-block;
+}
+
+.header-top-icon img {
+    vertical-align: middle;
+}
+
+.header-top-search {
+    margin-right: 40px;
+}
+
+.header-top-left {
+    position: absolute;
+    left: 0;
+}
+
+.header-top-right {
+    position: absolute;
+    right: 0;
+}
+
+/* Header Main */
+
+.header-main {
+    height: 120px;
+    background: #EBD8BC;
+}
