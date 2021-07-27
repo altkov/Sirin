@@ -118,3 +118,7 @@ header {
     height: 120px;
     background: #EBD8BC;
 }
+
+body {
+    background: #000;
+}
