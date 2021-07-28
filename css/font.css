@@ -248,3 +248,188 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font/icomoon.eot?elz10k');
+    src:  url('../font/icomoon.eot?elz10k#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?elz10k') format('truetype'),
+    url('../font/icomoon.woff?elz10k') format('woff'),
+    url('../font/icomoon.svg?elz10k#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-added-to-cart:before {
+    content: "\e900";
+}
+.icon-add-to-cart:before {
+    content: "\e901";
+}
+.icon-arrow-left:before {
+    content: "\e902";
+}
+.icon-arrow-right:before {
+    content: "\e903";
+}
+.icon-cancel:before {
+    content: "\e904";
+}
+.icon-card:before {
+    content: "\e905";
+}
+.icon-cart:before {
+    content: "\e906";
+}
+.icon-cash:before {
+    content: "\e907";
+}
+.icon-circled-menu:before {
+    content: "\e908";
+}
+.icon-clock:before {
+    content: "\e909";
+}
+.icon-close-menu:before {
+    content: "\e90a";
+}
+.icon-courier:before {
+    content: "\e90b";
+}
+.icon-delete:before {
+    content: "\e90c";
+}
+.icon-delete-1:before {
+    content: "\e90d";
+}
+.icon-delivery:before {
+    content: "\e90e";
+}
+.icon-dove .path1:before {
+    content: "\e90f";
+    color: rgb(240, 235, 227);
+}
+.icon-dove .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(218, 107, 90);
+}
+.icon-dove .path3:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(240, 235, 227);
+}
+.icon-dove .path4:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(35, 31, 20);
+}
+.icon-dove .path5:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(35, 31, 20);
+}
+.icon-down:before {
+    content: "\e914";
+}
+.icon-down-material:before {
+    content: "\e915";
+}
+.icon-fb:before {
+    content: "\e916";
+}
+.icon-filter:before {
+    content: "\e917";
+}
+.icon-home:before {
+    content: "\e918";
+}
+.icon-insta:before {
+    content: "\e919";
+}
+.icon-left:before {
+    content: "\e91a";
+}
+.icon-left-material:before {
+    content: "\e91b";
+}
+.icon-mail:before {
+    content: "\e91c";
+}
+.icon-map:before {
+    content: "\e91d";
+}
+.icon-menu:before {
+    content: "\e91e";
+}
+.icon-minus:before {
+    content: "\e91f";
+}
+.icon-odnoclassniki:before {
+    content: "\e920";
+}
+.icon-phone:before {
+    content: "\e921";
+}
+.icon-plus:before {
+    content: "\e922";
+}
+.icon-podcast:before {
+    content: "\e923";
+}
+.icon-right:before {
+    content: "\e924";
+}
+.icon-right-material:before {
+    content: "\e925";
+}
+.icon-sberbank:before {
+    content: "\e926";
+}
+.icon-search:before {
+    content: "\e927";
+}
+.icon-shipping:before {
+    content: "\e928";
+}
+.icon-shop:before {
+    content: "\e929";
+}
+.icon-telegram:before {
+    content: "\e92a";
+}
+.icon-twitter:before {
+    content: "\e92b";
+}
+.icon-up:before {
+    content: "\e92c";
+}
+.icon-up-material:before {
+    content: "\e92d";
+}
+.icon-vk:before {
+    content: "\e92e";
+}
+.icon-whatsapp:before {
+    content: "\e92f";
+}
+.icon-youtube:before {
+    content: "\e930";
+}
+

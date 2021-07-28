@@ -7,60 +7,97 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="page-container">
         <header class="header">
-            <div class="header-top">
-                <div class="container">
-                    <div class="header-top-left">
-                        <ul class="header-top-menu">
-                            <li class="header-top-item"><a href="#">Контакты</a></li>
-                            <li class="header-top-item"><a href="#">Актуальные</a></li>
+            <div class="header-desktop">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-top-left">
+                            <nav class="top-menu">
+                                <ul class=top-menu-list">
+                                    <li class="top-menu-item"><a href="#">Контакты</a></li>
+                                    <li class="top-menu-item"><a href="#">Актуальные</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-top-center">
+                            <div class="header-contact">
+                                <a href="tel:+79685184433" class="header-contact-phone header-icon">
+                                    <span class="icon icon-phone"></span>
+                                    <span>
+                                        +7 968 518-44-33
+                                    </span>
+                                </a>
+                                <a href="#" class="header-contact-whatsapp header-icon">
+                                    <span class="icon icon-whatsapp"></span>
+                                </a>
+                                <a href="#" class="header-contact-telegram header-icon">
+                                    <span class="icon icon-telegram"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-top-right">
+                            <a href="#" class="header-search header-icon"><span class="icon icon-search"></span></a>
+                            <ul class="header-lang">
+                                <li>Ru</li>
+                                <li>En</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main">
+                    <div class="container">
+                        <a href="/" class="header-logo"><img src="image/logo.png" alt="Логотип Сиринъ"></a>
+                        <nav class="main-menu">
+                            <ul class="main-menu-list">
+                                <li class="main-menu-item"><a data-content="Галерея" href="#">Галерея</a></li>
+                                <li class="main-menu-item"><a data-content="Коллекция" href="#">Коллекция</a></li>
+                                <li class="main-menu-item"><a data-content="Русский стиль" href="#">Русский стиль</a></li>
+                                <li class="main-menu-item"><a data-content="Подарки" href="#">Подарки</a></li>
+                                <li class="main-menu-item"><a data-content="Магазин" href="#">Магазин</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="header-social">
+                            <li class="header-social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                            <li class="header-social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                            <li class="header-social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                            <li class="header-social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                            <li class="header-social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
                         </ul>
                     </div>
-                    <div class="header-top-center">
-                        <a href="tel:+79685184433" class="header-top-phone header-top-icon">
-                            <img src="image/svg/phone.svg" alt="Телефон">
-                            <span>
-                                +7 968 518-44-33
-                            </span>
-                        </a>
-                        <a href="#" class="header-top-whatsapp header-top-icon"><img src="image/svg/whatsapp.svg" alt="Whatsapp"></a>
-                        <a href="#" class="header-top-telegram header-top-icon"><img src="image/svg/telegram.svg" alt="Telegram"></a>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="header-fixed">
+                    <div class="header-mobile-left">
+                        <div class="header-mobile-logo">
+                            <a href="/"><img src="image/logo-mobile.png" alt="Логотип Сиринъ"></a>
+                        </div>
                     </div>
-                    <div class="header-top-right">
-                        <a href="#" class="header-top-search header-top-icon"><img src="image/svg/search.svg" alt="Telegram"></a>
-                        <ul class="header-top-lang">
+                    <div class="header-mobile-center menu-opened">
+                        <ul class="header-lang">
                             <li>Ru</li>
                             <li>En</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-            <div class="header-main">
-                <div class="container">
-                    <div class="header-logo"><img src="image/logo.png" alt="Логотип Сиринъ"></div>
-                    <ul class="main-menu">
-                        <li class="main-menu-item"><a href="#">Галерея</a></li>
-                        <li class="main-menu-item"><a href="#">Коллекция</a></li>
-                        <li class="main-menu-item"><a href="#">Русский стиль</a></li>
-                        <li class="main-menu-item"><a href="#">Подарки</a></li>
-                        <li class="main-menu-item"><a href="#">Магазин</a></li>
-                    </ul>
-                    <ul class="header-social">
-                        <li class="header-social-item"><a href="#"><img src="image/svg/facebook.svg" alt="Facebook"></a></li>
-                        <li class="header-social-item"><a href="#"><img src="image/svg/vk.svg" alt="VK"></a></li>
-                        <li class="header-social-item"><a href="#"><img src="image/svg/instagram.svg" alt="Instagram"></a></li>
-                        <li class="header-social-item"><a href="#"><img src="image/svg/youtube.svg" alt="YouTube"></a></li>
-                        <li class="header-social-item"><a href="#"><img src="image/svg/podcast.svg" alt="Podcast"></a></li>
-                    </ul>
+                    <div class="header-mobile-right">
+                        <div class="menu-closed">
+                            <a href="#" class="header-search header-icon"><span class="icon icon-search"></span></a>
+                            <button class="menu-open"><span class="icon icon-menu"></span></button>
+                        </div>
+                        <div class="menu-opened">
+                            <button class="menu-close"><span class="icon icon-close-menu"></span></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
