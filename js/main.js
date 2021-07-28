@@ -1,13 +1,28 @@
 jQuery(function($) {
 
+    let mobileMenu = {
+        open: function(speed) {
+            this.changeState($('.header .menu-closed'), $('.header .menu-opened'), $('.mobile-menu'), speed);
+        },
+
+        close: function(speed) {
+            this.changeState($('.header .menu-opened'), $('.header .menu-closed'), $('.mobile-menu'), speed);
+        },
+
+        changeState: function($hide, $show, $menu, speed) {
+            $menu.fadeToggle(500);
+            $('body').toggleClass('no-scroll');
+            $hide.fadeOut(speed);
+            $show.fadeIn(speed);
+        }
+    }
+
     $('.header .menu-open').on('click', function() {
-        $('.header .menu-closed').hide(300);
-        $('.header .menu-opened').show(300);
+        mobileMenu.open(400);
     });
 
     $('.header .menu-close').on('click', function() {
-        $('.header .menu-opened').hide(300);
-        $('.header .menu-closed').show(300);
+        mobileMenu.close(400);
     });
 
 });
