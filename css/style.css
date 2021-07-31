@@ -185,18 +185,9 @@ button {
     border-color: #ED1C24;
 }
 
-.input:focus, .input:active {
-    border-width: 2px;
-    padding: 7px 15px;
-}
-
 .error {
     background-color: #F8F7EC;
     border-color: #ED1C24;
-}
-
-.input.select {
-    padding-right: 48px;
 }
 
 .select {
@@ -220,10 +211,6 @@ button {
     font-size: 18px;
 }
 
-.input.open, .input:hover {
-    border-color: #5F3316;
-}
-
 .select.open:after {
     content: "\e92c";
     transform: translateY(-50%);
@@ -236,6 +223,20 @@ button {
     border-radius: 8px;
     outline: none;
     color: #413E33;
+}
+
+.input:focus, .input:active {
+    border-color: #5F3316;
+    border-width: 2px;
+    padding: 7px 15px;
+}
+
+.input.select {
+    padding-right: 48px;
+}
+
+.input.open, .input:hover {
+    border-color: #5F3316;
 }
 
 /* Header */
@@ -711,9 +712,28 @@ a.header-search {
 
 /* Gallery Catalog */
 
+.catalog .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-main {
+    flex-grow: 1;
+}
+
+.catalog-topbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9D9A8F;
+    flex-wrap: wrap;
+}
+
 .catalog-sidebar {
     color: #231F14;
     width: 264px;
+    flex-shrink: 0;
 }
 
 .catalog-item-label {
@@ -749,4 +769,92 @@ a.header-search {
 
 .catalog-sort-list:after {
     color: #9D9A8F;
+}
+
+.product-img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.catalog-products {
+    margin-top: 48px;
+    margin-bottom: -32px;
+}
+
+.catalog-product {
+    margin-bottom: 32px;
+}
+
+.catalog-topbar-filters {
+    width: 100%;
+    display: flex;
+}
+
+.filter-bar {
+    padding: 8px 48px 8px 16px;
+    color: #fff;
+    background: #DA6B5A;
+    border-radius: 8px;
+    margin-right: 12px;
+    position: relative;
+}
+
+.filter-name {
+    font-size: 14px;
+}
+
+.filter-value {
+    font-weight: 600;
+}
+
+.cancel-filters {
+    color: #231F14;
+    background: #EBD8BC;
+}
+
+.cancel-filters .filter-name {
+    font-size: 16px;
+}
+
+.filter-cancel {
+    position: absolute;
+    right: 12px;
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.pagination > li {
+    margin-left: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.pagination > li:first-child {
+    margin-left: 0;
+}
+
+.pagination-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item.active {
+    background: #EBD8BC;
+    border-radius: 100%;
+    color: #5F3316;
+}
+
+.pagination-arrow .icon {
+    font-size: 36px;
+}
+
+.pagination-arrow.disabled {
+    color: #BBB9AE;
 }
