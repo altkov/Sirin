@@ -47,6 +47,9 @@ jQuery(function($) {
     });
 
 
+    $('.select').niceSelect();
+
+
 
 
 });
