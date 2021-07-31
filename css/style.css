@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 
 body {
     color: #605D52;
@@ -418,6 +422,29 @@ a.header-search {
     opacity: 0.5;
 }
 
+/* Breadcrumbs */
+
+.breadcrumbs {
+    color: #7E7C71;
+    display: flex;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.breadcrumbs-item {
+    margin-right: 8px;
+    font-weight: 500;
+}
+
+.breadcrumbs-item:first-child:after {
+    left: 17px;
+}
+
+.breadcrumbs-item:after {
+    content: '/';
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: 600;
+}
 
 /* Main Content */
 
@@ -457,12 +484,13 @@ a.header-search {
     margin-right: 16px;
 }
 
-.round-image {
-    border-radius: 100%;
-}
-
 .content-image {
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+    border-radius: 12px;
+}
+
+.round-image {
+    border-radius: 100%;
 }
 
 .creator-image {
@@ -510,24 +538,39 @@ a.header-search {
     color: #605D52;
 }
 
+.section-block {
+    margin-top: 48px;
+}
+
+/* Cards */
+
+.content-card {
+    margin-bottom: 32px;
+    display: block;
+}
+
+.card-header {
+    color: #231F14;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent;
+    border-bottom: 0;
+    padding: 0;
+}
+
+.cards-row {
+    margin-bottom: -32px;
+}
+
 /* Activities */
 
 .activity-card {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
-}
-
-.activity-header {
-    color: #231F14;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .activity-img {
     margin-right: 16px;
-    border-radius: 12px;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 /* Blog Preview */
@@ -542,4 +585,10 @@ a.header-search {
 
 .blog-preview-btn {
     margin-top: 32px;
+}
+
+
+
+.catalog-card img {
+    margin-bottom: 16px;
 }
