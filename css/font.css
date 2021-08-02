@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../font/Montserrat-Regular.woff2') format('woff2'),
+    url('../font/Montserrat-Regular.woff') format('woff'),
+    url('../font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Source Sans Pro';
     src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url('../font/sourcesansproextralight.woff2') format('woff2'), url('../font/sourcesansproextralight.woff') format('woff'), url('../font/sourcesansproextralight.ttf') format('truetype');
     font-weight: 200;
@@ -339,6 +348,36 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+    content: "\e931";
+}
+.icon-arrow-down:before {
+    content: "\e932";
+}
+.icon-dove .path1:before {
+    content: "\e90f";
+    color: rgb(240, 235, 227);
+}
+.icon-dove .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(218, 107, 90);
+}
+.icon-dove .path3:before {
+    content: "\e911";
+    margin-left: -1em;
+    color: rgb(240, 235, 227);
+}
+.icon-dove .path4:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(35, 31, 20);
+}
+.icon-dove .path5:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgb(35, 31, 20);
+}
 .icon-added-to-cart:before {
     content: "\e900";
 }
@@ -383,30 +422,6 @@
 }
 .icon-delivery:before {
     content: "\e90e";
-}
-.icon-dove .path1:before {
-    content: "\e90f";
-    color: rgb(240, 235, 227);
-}
-.icon-dove .path2:before {
-    content: "\e910";
-    margin-left: -1em;
-    color: rgb(218, 107, 90);
-}
-.icon-dove .path3:before {
-    content: "\e911";
-    margin-left: -1em;
-    color: rgb(240, 235, 227);
-}
-.icon-dove .path4:before {
-    content: "\e912";
-    margin-left: -1em;
-    color: rgb(35, 31, 20);
-}
-.icon-dove .path5:before {
-    content: "\e913";
-    margin-left: -1em;
-    color: rgb(35, 31, 20);
 }
 .icon-down:before {
     content: "\e914";
@@ -471,7 +486,7 @@
 .icon-shipping:before {
     content: "\e928";
 }
-.icon-shop:before {
+.icon-Shop:before {
     content: "\e929";
 }
 .icon-telegram:before {
@@ -495,4 +510,3 @@
 .icon-youtube:before {
     content: "\e930";
 }
-

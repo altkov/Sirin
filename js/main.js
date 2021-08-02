@@ -49,6 +49,14 @@ jQuery(function($) {
 
     $('.select').niceSelect();
 
+    $('.nice-select .sort-price-up').append('<span class="icon icon-arrow-up">');
+    $('.nice-select .sort-price-down').append('<span class="icon icon-arrow-down">');
+
+    $('.filter-cancel').hover(function() {
+        $(this).parent().addClass('hover');
+    }, function() {
+        $(this).parent().removeClass('hover');
+    });
 
 
 
