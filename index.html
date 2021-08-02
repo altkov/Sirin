@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.extend.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Галерея «Сиринъ»</title>
@@ -64,12 +65,12 @@
                                 <li class="main-menu-item"><a data-content="Магазин" href="#">Магазин</a></li>
                             </ul>
                         </nav>
-                        <ul class="header-social">
-                            <li class="header-social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
+                        <ul class="social-list">
+                            <li class="social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,12 +129,12 @@
                         </ul>
                     </nav>
                     <div class="mobile-menu-bottom">
-                        <ul class="header-social">
-                            <li class="header-social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
-                            <li class="header-social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
+                        <ul class="social-list">
+                            <li class="social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -188,7 +189,7 @@
                         </div>
                         <div class="js-tab-content hidden" id="tab-creators">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 creator-block">
                                     <div class="creator-about">
                                         <img src="image/Gallery_Creators_Desktop1.jpg" alt="Ирина Малиновская" class="creator-image content-image">
                                         <div class="creator-text">
@@ -198,7 +199,7 @@
                                     </div>
                                     <p class="extra-text">«В какой-то момент был совершен решительный поворот в сторону любимого хобби, и мне захотелось применить свои управленческие и коммерческие знания, и опыт в сфере культуры, поэтому несколько лет я работала в музеях и галереях. А в течение последних пяти лет занимаюсь собственным бизнесом, развиваю проект «Пастила и Подарки», представляющий в Москве Коломенскую пастилу музейной фабрики. Моя сильная сторона в понимании процессов, происходящих как в сфере культуры, так и в бизнесе. Но душа и сердце требуют прекрасного, поэтому чистая коммерция для меня невозможна. Галерея - идеальное сочетание всего того, что мне близко и интересно, мое место силы и вдохновения!»</p>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 creator-block">
                                     <div class="creator-about">
                                         <img src="image/Gallery_Creators_Desktop2.jpg" alt="Анастасия Некрасова" class="creator-image content-image">
                                         <div class="creator-text">
@@ -230,8 +231,8 @@
                     <h2>Деятельность Галереи</h2>
                     <p>Галерея «Сиринъ» находит лучших мастеров своего дела, очищает от пыли времени уникальные предметы и призывает инвестировать в искусство.  «Сиринъ» - это не просто Галерея, это сообщество людей со схожими представлениями о&nbsp;прекрасном. </p>
                 </div>
-                <div class="row section-block cards-row">
-                    <div class="col-md-6">
+                <div class="row section-block cards-row mobile-slider">
+                    <div class="col-lg-6">
                         <div class="activity-card content-card">
                             <img src="image/Image-1.jpg" alt="Коллекционирование" class="activity-img content-image">
                             <div class="activity-text">
@@ -240,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="activity-card content-card">
                             <img src="image/Image-2.jpg" alt="Консультации и Экспертиза" class="activity-img content-image">
                             <div class="activity-text">
@@ -249,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="activity-card content-card">
                             <img src="image/Image-3.jpg" alt="Экскурсии и Мастер-классы" class="activity-img content-image">
                             <div class="activity-text">
@@ -258,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="activity-card content-card">
                             <img src="image/Image-4.jpg" alt="Выставочная деятельность" class="activity-img content-image">
                             <div class="activity-text">
@@ -292,8 +293,128 @@
 
         <!-- / SECTION -->
 
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer-nav">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-menu">
+                            <div class="footer-menu-header">Галерея</div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Галерея</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Коллекционирование</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Консультации и эспертиза</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Экскурсии и мастер-классы</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Выставочная деятельность</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Блог</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-menu">
+                            <div class="footer-menu-header">Коллекция</div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Коллекция</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Работы мастеров</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Промыслы</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Антиквариат</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Сладости</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-menu">
+                            <div class="footer-menu-header">Русский стиль</div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Русскй стиль</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">История</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Люди в русском</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Рекомендации</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Друзья галереи</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="col-lg-3 col-md-6 footer-menu">
+                            <li class="footer-menu-item"></li>
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">Подарки</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">Магазин</a>
+                            </li>
+                            <li class="footer-menu-item">
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">Контакты</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p class="copyright">
+                            Галерея «СИРИН» © 2021
+                        </p>
+                    </div>
+                    <div class="footer-bottom-center">
+                        <ul class="social-list">
+                            <li class="social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                            <li class="social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="footer-privacy">
+                            <a href="#">
+                                Политика конфиденциальности
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+
+        <!-- / FOOTER -->
+
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

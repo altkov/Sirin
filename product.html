@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/nice-select.updated.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,8 +33,8 @@
                             <a href="tel:+79685184433" class="header-contact-phone header-icon">
                                 <span class="icon icon-phone"></span>
                                 <span>
-                                        +7 968 518-44-33
-                                    </span>
+                                    +7 968 518-44-33
+                                </span>
                             </a>
                             <a href="#" class="header-contact-whatsapp header-icon">
                                 <span class="icon icon-whatsapp"></span>
@@ -64,12 +65,12 @@
                             <li class="main-menu-item"><a data-content="Магазин" href="#">Магазин</a></li>
                         </ul>
                     </nav>
-                    <ul class="header-social">
-                        <li class="header-social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
+                    <ul class="social-list">
+                        <li class="social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -103,8 +104,8 @@
                         <a href="tel:+79685184433" class="header-contact-phone header-icon">
                             <span class="icon icon-phone"></span>
                             <span>
-                                    +7 968 518-44-33
-                                </span>
+                                +7 968 518-44-33
+                            </span>
                         </a>
                         <a href="#" class="header-contact-whatsapp header-icon">
                             <span class="icon icon-whatsapp"></span>
@@ -128,12 +129,12 @@
                     </ul>
                 </nav>
                 <div class="mobile-menu-bottom">
-                    <ul class="header-social">
-                        <li class="header-social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
-                        <li class="header-social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
+                    <ul class="social-list">
+                        <li class="social-item"><a href="#"><span class="icon icon-fb"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-vk"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-insta"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
+                        <li class="social-item"><a href="#"><span class="icon icon-podcast"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -233,26 +234,26 @@
                     </div>
                     <div class="recommended-products">
                         <h2>Похожие предметы</h2>
-                        <ul class="row catalog-products recommended-products-list">
-                            <li class="col-md-6 catalog-product recommended-products-item">
+                        <ul class="row catalog-products recommended-products-list mobile-slider" data-slick='{"slidesToShow": 2, "slidesToScroll": 2}'>
+                            <li class="col-6 col-sm-12 col-md-6 catalog-product recommended-products-item">
                                 <a href="#">
                                     <div class="product-img"><img src="image/catalog/8b2171bf39e754074578cf5652aa03cf.png" alt=""></div>
                                     <div class="product-title">Дымковская игрушка</div>
                                 </a>
                             </li>
-                            <li class="col-md-6 catalog-product recommended-products-item">
+                            <li class="col-6 col-sm-12 col-md-6 catalog-product recommended-products-item">
                                 <a href="#">
                                     <div class="product-img"><img src="image/catalog/8d5913f3e9603eaddd4c61cc6b707238.png" alt=""></div>
                                     <div class="product-title">Мария с младенцем</div>
                                 </a>
                             </li>
-                            <li class="col-md-6 catalog-product recommended-products-item">
+                            <li class="col-6 col-sm-12 col-md-6 catalog-product recommended-products-item">
                                 <a href="#">
                                     <div class="product-img"><img src="image/catalog/713e7c8f85deebd0b238c8ee1f80730d.png" alt=""></div>
                                     <div class="product-title">Коровка</div>
                                 </a>
                             </li>
-                            <li class="col-md-6 catalog-product recommended-products-item">
+                            <li class="col-6 col-sm-12 col-md-6 catalog-product recommended-products-item">
                                 <a href="#">
                                     <div class="product-img"><img src="image/catalog/e33290f0e6324cbf47467c3681211aac.png" alt=""></div>
                                     <div class="product-title">Волхв</div>
@@ -271,8 +272,8 @@
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/jquery.nice-select.updated.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 
 </html>
