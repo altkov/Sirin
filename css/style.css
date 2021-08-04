@@ -196,6 +196,12 @@ button {
     border-color: #5F3316;
 }
 
+.btn-secondary:disabled, .btn-secondary.slick-disabled {
+    background: #F8F7EC;
+    border: 1px solid #BBB9AE;
+    color: #BBB9AE;
+}
+
 .btn-up, .btn-down {
     border-radius: 100%;
     width: 40px;
@@ -671,6 +677,7 @@ a.header-search {
 .breadcrumbs-item {
     margin-right: 8px;
     font-weight: 500;
+    flex-shrink: 0;
 }
 
 .breadcrumbs-item:first-child:after {
@@ -746,6 +753,10 @@ a.header-search {
     border-radius: 100%;
 }
 
+.owl-carousel .owl-item .creator-image {
+    width: auto;
+}
+
 .content-tabs {
     display: flex;
     justify-content: center;
@@ -767,6 +778,15 @@ a.header-search {
     color: #413E33;
     text-decoration: underline;
 }
+
+.tab-content.slick-slide {
+    margin-right: 10px;
+}
+
+.tab-content.slick-slide:last-child {
+    margin-right: 0;
+}
+
 
 .main-content {
     margin-top: 48px;
@@ -812,7 +832,7 @@ a.header-search {
 .sidebox {
     padding: 40px;
     background: #EBD8BC;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     position: relative;
     z-index: 1;
@@ -893,8 +913,7 @@ a.header-search {
     }
 
     .extra-description img {
-        margin: auto;
-        margin-bottom: 8px;
+        margin: auto auto 8px;
     }
 
     .sidebox-wrap {
@@ -949,8 +968,10 @@ a.header-search {
     padding: 0;
 }
 
-.cards-row {
-    margin-bottom: -32px;
+@media (min-width: 576px) {
+    .cards-row {
+        margin-bottom: -32px;
+    }
 }
 
 
@@ -1208,6 +1229,12 @@ a.header-search {
     }
 }
 
+@media (max-width: 576px) {
+    .catalog-products {
+        margin: 16px 0 32px;
+    }
+}
+
 /* Pagination */
 
 .pagination {
@@ -1286,8 +1313,12 @@ a.header-search {
     margin-right: 16px;
 }
 
-.product-card-main-img {
+.product-card-main-images {
     width: 600px;
+}
+
+.product-card-main-images img {
+    border-radius: 12px;
 }
 
 .product-card-main-img img {
@@ -1345,7 +1376,7 @@ a.header-search {
     margin-bottom: 16px;
 }
 
-.product-card-img-overview.active img {
+.product-card-img-overview.slick-current img {
     border: 2px solid #5F3316;
 }
 
@@ -1362,6 +1393,7 @@ a.header-search {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
 }
 
 .product-card-images .btn-up {
@@ -1408,7 +1440,7 @@ a.header-search {
 }
 
 @media (max-width: 996px) {
-    .product-card-main-img {
+    .product-card-main-images {
         flex-grow: 1;
         width: auto;
     }
@@ -1572,7 +1604,7 @@ a.header-search {
 .footer-bottom {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 40px 0;
-    border-top: 1px solid rgba(126, 124, 113, 50%);;
+    border-top: 1px solid rgba(126, 124, 113, 0.5);;
 }
 
 @media (max-width: 768px) {
@@ -1660,31 +1692,49 @@ a.header-search {
 
 /* Slider */
 
-.slick-dots {
+.mobile-slider .slick-slide {
+    padding: 0 8px;
+}
+
+.mobile-slider .slick-list {
+    margin: 0 -8px;
+}
+
+.mobile-slider {
+    overflow: hidden;
+}
+
+.tabs-content.slick-slider {
+    user-select: initial;
+    touch-action: initial;
+    -webkit-tap-highlight-color: initial;
+
+}
+
+.slider-dots {
     display: flex;
     justify-content: center;
     padding: 0;
     font-size: 0;
     margin-top: 16px;
+    align-items: center;
 }
 
-.slick-dots li {
-    padding: 0 4px;
-}
-
-.slick-dots button {
+.slider-dots li {
     width: 12px;
     height: 12px;
     border-radius: 100%;
     background: #9D9A8F;
     vertical-align: middle;
+    margin: 0 4px;
+    cursor: pointer;
 }
 
-.slick-dots .slick-active button {
+.slider-dots li.slick-active {
     width: 16px;
     height: 16px;
     background: #5F3316;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1692,7 +1742,7 @@ a.header-search {
     margin-bottom: 24px;
 }
 
-.creator-block:last-child() {
+.creator-block:last-child {
     margin-bottom: 0;
 }
 
@@ -1717,4 +1767,10 @@ a.header-search {
         width: 88px;
         height: 88px;
     }
+}
+
+
+
+.drag-scroll .os-scrollbar, .breadcrumbs-wrap .os-scrollbar {
+    display: none;
 }

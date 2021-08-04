@@ -165,16 +165,16 @@
         <main class="main content-section">
             <div class="container">
                 <div class="content-tabs" data-target=".main-content">
-                    <a href="#tab-concept" class="content-tab active">
+                    <a href="#tab-concept" data-index="0" class="content-tab active">
                         <h2>Концепия</h2>
                     </a>
-                    <a href="#tab-creators" class="content-tab">
+                    <a href="#tab-creators" data-index="1" class="content-tab">
                         <h2>Создатели</h2>
                     </a>
                 </div>
                 <div class="main-content">
                     <div class="tabs-content">
-                        <div class="js-tab-content" id="tab-concept">
+                        <div class="tab-content" id="tab-concept">
                             <div class="content-row">
                                 <div class="main-text">
                                     <p>Наша работа — узнавать неочевидные адреса, явки, пароли, искать подлинную красоту, воплощенную в предметах повседневного быта. Находить мастеров, сохраняющих историю страны и рода в своих работах. Разговаривать с теми, кого объединяет любовь к старине, сметающая языковые барьеры. Ну, и, конечно же, делиться этой красотой.</p>
@@ -187,7 +187,7 @@
                                 </aside>
                             </div>
                         </div>
-                        <div class="js-tab-content hidden" id="tab-creators">
+                        <div class="tab-content" id="tab-creators">
                             <div class="row">
                                 <div class="col-md-6 creator-block">
                                     <div class="creator-about">
@@ -255,7 +255,7 @@
                             <img src="image/Image-3.jpg" alt="Экскурсии и Мастер-классы" class="activity-img content-image">
                             <div class="activity-text">
                                 <h5 class="card-header">Экскурсии и Мастер-классы</h5>
-                                Галерея проводит онлайн и офлайн экскурсии и мастер-классы. В живую или в записи рассказывает о русской традиции, сладостях, декоративно-прикладном искусстве и русском стиле.</p>
+                                <p>Галерея проводит онлайн и офлайн экскурсии и&nbsp;мастер-классы. В живую или в записи рассказывает о русской традиции, сладостях, декоративно-прикладном искусстве и русском стиле.</p>
                             </div>
                         </div>
                     </div>
@@ -377,7 +377,7 @@
                                 <a href="#" class="footer-menu-link">Контакты</a>
                             </li>
                             <li class="footer-menu-item">
-                                <a href="#" class="footer-menu-link">Доставка и оплата</a>
+                                <a href="#" class="footer-menu-link">Доставка и&nbsp;оплата</a>
                             </li>
                         </ul>
                     </div>
@@ -414,7 +414,9 @@
 
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.overlayScrollbars.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/class.slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
