@@ -1,0 +1,64 @@
+2021-08-04T10:17:01+00:00 CRITICAL Maximum execution time of 60 seconds exceeded в D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class.wp-dependencies.php на строке 256
+
+2021-08-04T11:44:29+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 16
+
+2021-08-04T11:44:31+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 16
+
+2021-08-04T11:44:34+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 16
+
+2021-08-04T11:45:27+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 16
+
+2021-08-04T11:45:29+00:00 CRITICAL require_once(): Failed opening required 'vendor/autoload.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 16
+
+2021-08-04T11:53:08+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T11:55:10+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T11:56:10+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T11:58:11+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T11:59:19+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:00:19+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:02:20+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:02:30+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR) в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 20
+
+2021-08-04T12:02:31+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR) в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 20
+
+2021-08-04T12:02:42+00:00 CRITICAL syntax error, unexpected '}' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 20
+
+2021-08-04T12:02:44+00:00 CRITICAL syntax error, unexpected '}' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-options.php на строке 20
+
+2021-08-04T12:03:10+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:03:11+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:03:26+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T12:03:28+00:00 CRITICAL syntax error, unexpected end of file в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\helpers.php на строке 1
+
+2021-08-04T15:29:11+00:00 CRITICAL Uncaught Error: Call to a member function walk() on string in D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php:608
+Stack trace:
+#0 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\header.php(66): wp_nav_menu(Object(stdClass))
+#2 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template.php(770): require_once('D:\\Code\\OpenSer...')
+#3 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template.php(716): load_template('D:\\Code\\OpenSer...', true, Array)
+#4 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\index.php(15): get_header()
+#6 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template-loader.php(106): include('D:\\Code\\OpenSer...')
+#7 D: в D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php на строке 608
+
+2021-08-04T15:29:13+00:00 CRITICAL Uncaught Error: Call to a member function walk() on string in D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php:608
+Stack trace:
+#0 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php(228): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\header.php(66): wp_nav_menu(Object(stdClass))
+#2 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template.php(770): require_once('D:\\Code\\OpenSer...')
+#3 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template.php(716): load_template('D:\\Code\\OpenSer...', true, Array)
+#4 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\404.php(10): get_header()
+#6 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template-loader.php(106): include('D:\\Code\\OpenSer...')
+#7 D:\C в D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\nav-menu-template.php на строке 608
+
