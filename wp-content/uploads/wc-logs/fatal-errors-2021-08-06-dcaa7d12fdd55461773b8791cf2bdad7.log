@@ -1,0 +1,54 @@
+2021-08-06T10:05:44+00:00 CRITICAL require(): Failed opening required 'D:\Code\OpenServer\domains\sirin-gallery.local/wp-content/themes/sirin/includes/woocommerce.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\functions.php на строке 32
+
+2021-08-06T10:05:44+00:00 CRITICAL require(): Failed opening required 'D:\Code\OpenServer\domains\sirin-gallery.local/wp-content/themes/sirin/includes/woocommerce.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\functions.php на строке 32
+
+2021-08-06T10:05:44+00:00 CRITICAL require(): Failed opening required 'D:\Code\OpenServer\domains\sirin-gallery.local/wp-content/themes/sirin/includes/woocommerce.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\functions.php на строке 32
+
+2021-08-06T10:05:46+00:00 CRITICAL require(): Failed opening required 'D:\Code\OpenServer\domains\sirin-gallery.local/wp-content/themes/sirin/includes/woocommerce.php' (include_path='.') в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\functions.php на строке 32
+
+2021-08-06T10:06:00+00:00 CRITICAL Cannot redeclare sirin_woocommerce_setup() (previously declared in D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\woocommerce.php:20) в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\woocommerce.php на строке 37
+
+2021-08-06T10:06:01+00:00 CRITICAL Cannot redeclare sirin_woocommerce_setup() (previously declared in D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\woocommerce.php:20) в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\woocommerce.php на строке 37
+
+2021-08-06T10:43:37+00:00 CRITICAL Uncaught TypeError: Return value of putIcon() must be of the type string, null returned in D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-functions.php:5
+Stack trace:
+#0 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\global\breadcrumb.php(16): putIcon('%icon-home%')
+#1 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\Code\\OpenSer...')
+#2 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2248): wc_get_template('global/breadcru...', Array)
+#3 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-functions.php(7): woocommerce_breadcrumb(Array)
+#4 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(303): sirin_breadcrumb('')
+#5 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, A в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-functions.php на строке 5
+
+2021-08-06T10:44:01+00:00 CRITICAL Uncaught TypeError: Return value of putIcon() must be of the type string, null returned in D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-functions.php:5
+Stack trace:
+#0 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\global\breadcrumb.php(16): putIcon('%icon-home%')
+#1 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\Code\\OpenSer...')
+#2 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2248): wc_get_template('global/breadcru...', Array)
+#3 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-functions.php(7): woocommerce_breadcrumb(Array)
+#4 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(303): sirin_breadcrumb('')
+#5 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, A в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\inc\theme-functions.php на строке 5
+
+2021-08-06T11:18:03+00:00 CRITICAL Uncaught Error: Call to undefined function get_tempalte_part() in D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-functions.php:21
+Stack trace:
+#0 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(303): sirin_product_start('')
+#1 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#2 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\content-single-product.php(27): do_action('woocommerce_bef...')
+#4 D:\Code\OpenServer\domains\sirin-gallery.local\wp-includes\template.php(772): require('D:\\Code\\OpenSer...')
+#5 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\Code\\OpenSer...', false)
+#6 D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\siri в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-functions.php на строке 21
+
+2021-08-06T12:10:16+00:00 CRITICAL syntax error, unexpected '$attachment_id' (T_VARIABLE), expecting '(' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 31
+
+2021-08-06T12:10:18+00:00 CRITICAL syntax error, unexpected '$attachment_id' (T_VARIABLE), expecting '(' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 31
+
+2021-08-06T12:10:20+00:00 CRITICAL syntax error, unexpected '$attachment_id' (T_VARIABLE), expecting '(' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 31
+
+2021-08-06T12:12:16+00:00 CRITICAL syntax error, unexpected '$attachment_id' (T_VARIABLE), expecting '(' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 31
+
+2021-08-06T14:09:48+00:00 CRITICAL syntax error, unexpected '}', expecting ';' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 64
+
+2021-08-06T14:10:08+00:00 CRITICAL syntax error, unexpected '}', expecting ';' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 62
+
+2021-08-06T14:10:11+00:00 CRITICAL syntax error, unexpected '}', expecting ';' в D:\Code\OpenServer\domains\sirin-gallery.local\wp-content\themes\sirin\woocommerce\includes\wc-single-product.php на строке 62
+

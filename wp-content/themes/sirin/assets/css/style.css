@@ -621,18 +621,20 @@ a.header-search {
     }
 }
 
+/* Page Content */
+
+.page-content {
+    padding-top: 32px;
+}
+
 /* Page Heading */
 
 .page-header {
-    padding: 42px 0 48px 0;
+    padding: 32px 0 48px 0;
 }
 
 .page-header h1 {
     margin-bottom: 16px;
-}
-
-.page-header .section-header {
-    margin-top: 22px;
 }
 
 .page-header-ornament {
@@ -671,7 +673,7 @@ a.header-search {
     color: #7E7C71;
     display: flex;
     font-family: 'Avenir Next', sans-serif;
-    margin-bottom: 26px;
+    padding: 10px 0;
 }
 
 .breadcrumbs-item {
@@ -1311,10 +1313,20 @@ a.header-search {
     flex-direction: column;
     align-items: center;
     margin-right: 16px;
+    flex-shrink: 0;
 }
 
 .product-card-main-images {
     width: 600px;
+    overflow: hidden;
+}
+
+.product-card-main-images .slider-dots {
+    margin-top: 0;
+}
+
+.product-card-main-images .slider-dots li {
+    display: none;
 }
 
 .product-card-main-images img {
@@ -1351,16 +1363,19 @@ a.header-search {
     margin-right: -4px;
 }
 
-.product-card-variant {
+.product-card-variant-list .product-card-img-overview {
     margin-bottom: 8px;
     width: 80px;
     height: 80px;
     cursor: pointer;
     padding: 0 4px;
+    box-sizing: content-box;
 }
 
-.product-card-variant img {
+.product-card-variant-list .product-card-img-overview img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .product-card-full-description {
@@ -1439,10 +1454,13 @@ a.header-search {
     width: 100%;
 }
 
+
+
 @media (max-width: 996px) {
     .product-card-main-images {
-        flex-grow: 1;
-        width: auto;
+        /*flex-grow: 1;*/
+        width: 100%;
+        flex-shrink: 1;
     }
 
     .product-card-hero {
@@ -1455,6 +1473,18 @@ a.header-search {
 
     .sidebox {
         width: 100%;
+    }
+
+    .product-card-main-images .slider-dots {
+        margin-top: 16px;
+    }
+
+    .product-card-main-images .slider-dots li {
+        display: block;
+    }
+
+    .product-card-images {
+        display: none;
     }
 
 
@@ -1476,9 +1506,6 @@ a.header-search {
         margin-top: 24px;
     }
 
-    .product-card-images {
-        display: none;
-    }
 }
 
 /* Expertise and Consult */

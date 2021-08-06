@@ -102,9 +102,10 @@ jQuery(function($) {
     });
 
     Slider.create($('.product-card-main-images'), {
-        dots: false,
+        dots: true,
         fade: true,
         asNavFor: '.product-card-images-list',
+        speed: 300,
     });
 
     Slider.create($('.product-card-images-list'), {

@@ -20,8 +20,16 @@ require get_template_directory() . '/inc/theme-settings.php';
 
 require get_template_directory() . '/inc/theme-options.php';
 
+require get_template_directory() . '/inc/theme-functions.php';
+
 require get_template_directory() . '/inc/widgets.php';
 
 require get_template_directory() . '/inc/helpers.php';
 
 require get_template_directory() . '/inc/enqueue-scripts.php';
+
+if ( class_exists( 'WooCommerce' ) ) {
+    require_once get_template_directory() . '/inc/woocommerce.php';
+    require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+    require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
+}

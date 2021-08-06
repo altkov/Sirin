@@ -284,9 +284,9 @@ class WC_Template_Loader {
 		add_filter( 'woocommerce_product_tabs', array( __CLASS__, 'unsupported_theme_remove_review_tab' ) );
 		remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 		remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-slider' );
+		// add_theme_support( 'wc-product-gallery-zoom' );
+		// add_theme_support( 'wc-product-gallery-lightbox' );
+		// add_theme_support( 'wc-product-gallery-slider' );
 	}
 
 	/**
