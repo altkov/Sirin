@@ -54,7 +54,7 @@ jQuery(function($) {
 
         let target = $(this).attr('href');
 
-        let slider = $($tabs.data('target')).find('.' + Slider.values.sliderClass);
+        let slider = $($tabs.data('target')).find('.' + Slider.config.sliderClass);
         Slider.get(slider).goTo($(this).data('index'));
 
         $(this).addClass('active');
@@ -64,9 +64,11 @@ jQuery(function($) {
         $('.select').niceSelect();
     }
 
+
+    Slider.get($('.recommended-products-list.mobile-slider')).setArgs({"slidesToShow": 2, "slidesToScroll": 2});
+
     Slider.createMobile($('.mobile-slider'), {
         dots: true,
-        margin: 16,
     }, 576, function() {
         $('.mobile-slider').removeClass('row');
     }, function() {
@@ -97,14 +99,15 @@ jQuery(function($) {
         if ($(window).width() < 768) {
             let $parent = $(this).parent();
             $parent.toggleClass('menu-open');
-            $parent.find('.footer-menu-list').slideToggle();
+            $parent.find('.sub-menu').slideToggle();
         }
     });
 
     Slider.create($('.product-card-main-images'), {
-        dots: false,
+        dots: true,
         fade: true,
         asNavFor: '.product-card-images-list',
+        speed: 300,
     });
 
     Slider.create($('.product-card-images-list'), {
@@ -117,5 +120,34 @@ jQuery(function($) {
         arrows: true,
         asNavFor: '.product-card-main-images',
         focusOnSelect: true,
+    }).beforeSlide(function(e, slick, currentSlide, nextSlide) {
+        let $variants = $('.product-card-variant-list .product-card-img-overview')
+        $variants.removeClass('active');
+        $variants.eq(nextSlide).addClass('active');
     });
+
+    $('.product-card-variant-list .product-card-img-overview').on('click', function() {
+        Slider.get($('.product-card-images-list')).goTo($(this).index());
+    }).eq(0).addClass('active');
+
+    Slider.create($('.side-slider'), {
+        dots: true,
+        arrows: true,
+        adaptiveHeight: false,
+        prevArrow: Slider.config.prev,
+        nextArrow: Slider.config.next,
+    })
+
+    Slider.create($('.slider-unlimited'), {
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        swipeToSlide: true,
+        adaptiveHeight: false,
+        infinite: true,
+        prevArrow: Slider.config.prev,
+        nextArrow: Slider.config.next,
+    });
+
 });

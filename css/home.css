@@ -1,0 +1,158 @@
+p > a, p > a:not([href]):not([class]), p > a:not([href]):not([class]):hover {
+    color: #5F3316;
+}
+
+/* Hero */
+
+.site-hero {
+    margin-top: 32px;
+}
+
+/* Slider */
+
+.slider-unlimited-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-unlimited-wrap .container {
+    display: flex;
+}
+
+.slider-unlimited {
+    width: 100%;
+}
+
+.slider-unlimited .slick-list {
+    overflow: hidden;
+    position: absolute;
+    width: 1224px;
+}
+
+.slide-card {
+    margin: 0 12px;
+}
+
+.slide-card .card-header {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.slide-card img {
+    object-fit: cover;
+}
+
+.slider-cards .slick-list {
+    margin: 0 -12px;
+}
+
+.slider-ornament {
+    padding: 80px 0 120px;
+}
+
+.slider-ornament .slider-unlimited {
+
+}
+
+.slider-ornament .slider-unlimited .slick-list {
+    padding: 80px 0 120px;
+    top: -80px;
+    margin-bottom: -120px;
+    background: url(../image/Ornament-transparent.png) left center no-repeat;
+    margin-left: 12px;
+}
+
+.slide-card img {
+    height: 288px;
+}
+
+.slider-unlimited-wrap .text-block {
+    width: 288px;
+    flex-shrink: 0;
+}
+
+.slider-unlimited .slick-arrow {
+    top: -48px;
+}
+
+/* Card Tall */
+
+.card-tall img {
+    height: 432px;
+    object-fit: cover;
+}
+
+/* Outer Section */
+
+.outer-section .ornament-block {
+    margin-bottom: 16px;
+}
+
+/* Pseudo Footer Shop */
+
+.pseudo-footer-shop-container {
+    padding: 48px 0;
+}
+
+.pseudo-footer-shop {
+    background-color: #DA6B5A;
+    color: #fff;
+    background-image: url(../image/home/footer-shop-ornament.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pseudo-footer-shop .container {
+    padding: 64px 80px 90px 0;
+}
+
+.pseudo-footer-shop h2 {
+    color: #fff;
+}
+
+.pseudo-footer-shop-header {
+    margin-bottom: 32px;
+}
+
+.pseudo-footer-shop-menu-item {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.pseudo-footer-shop-menu-item + .pseudo-footer-shop-menu-item {
+    margin-top: 24px;
+}
+
+/* Section Form */
+
+.section-form {
+    background: #EBD8BC;
+}
+
+.section-form .container {
+    max-width: 808px;
+}
+
+.section-form h2 {
+    text-align: center;
+}
+
+.section-form .input-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section-form .input-title {
+    width: 100%;
+}
+
+.section-form .input {
+    flex-grow: 1;
+    margin-right: 24px;
+}
+.section-form p {
+    text-align: center;
+}

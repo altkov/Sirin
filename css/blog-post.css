@@ -1,0 +1,27 @@
+.blog-post-content {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #000;
+}
+
+.blog-post-share {
+    text-align: center;
+}
+
+.blog-post .social-list {
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.blog-post .social-item {
+    width: auto;
+}
+
+.blog-post .social-item:first-child {
+    margin-left: 0;
+}
+
+.blog-post .social-item .icon {
+    font-size: 36px;
+    color: #887559;
+}

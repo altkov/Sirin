@@ -2,9 +2,11 @@ function Slider($container) {
     this.$container = $container;
 }
 
-Slider.values = {
-    sliderClass: 'slick-slider',
-    initedClass: 'slick-initialized',
+Slider.config = {
+    sliderClass : 'slick-slider',
+    initedClass : 'slick-initialized',
+    prev        : '<button type="button" class="slick-prev"><span class="icon icon-arrow-left"></span></button>',
+    next        : '<button type="button" class="slick-next"><span class="icon icon-arrow-right"></span></button>',
 }
 
 Slider.create = function($container, options) {
@@ -38,7 +40,7 @@ Slider.create = function($container, options) {
 Slider.createMobile = function($container, options, breakpoint, oncreate, ondestroy) {
     function createSlider() {
         oncreate();
-        Slider.create($container.filter(':not(.' + Slider.values.initedClass + ')'), options);
+        Slider.create($container.filter(':not(.' + Slider.config.initedClass + ')'), options);
     }
 
     if(window.innerWidth < breakpoint) {
@@ -50,7 +52,7 @@ Slider.createMobile = function($container, options, breakpoint, oncreate, ondest
             createSlider();
         } else {
             ondestroy();
-            Slider.get($container.filter('.' + Slider.values.initedClass )).delete();
+            Slider.get($container.filter('.' + Slider.config.initedClass )).delete();
         }
     });
 }
@@ -71,4 +73,16 @@ Slider.prototype.delete = function() {
     // this.$container.trigger('destroy.owl.carousel');
 
     this.$container.slick('unslick');
+}
+
+Slider.prototype.setArgs = function(args) {
+    this.$container.data('slick', args);
+}
+
+Slider.prototype.afterSlide = function(handler) {
+    this.$container.on('afterChange', handler);
+}
+
+Slider.prototype.beforeSlide = function(handler) {
+    this.$container.on('beforeChange', handler);
 }
